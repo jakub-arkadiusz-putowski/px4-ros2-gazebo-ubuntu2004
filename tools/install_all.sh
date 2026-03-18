@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO_NAME="px4-ros2-gazebo-ubuntu20.04"
+REPO_NAME="px4-ros2-gazebo-ubuntu2004"
 REPO_OWNER="jakub-arkadiusz-putowski"
 REPO_BRANCH="main"
 REPO_URL="https://github.com/${REPO_OWNER}/${REPO_NAME}.git"
