@@ -18,6 +18,6 @@ sudo apt-get install -y \
   make \
   gcc \
   g++ \
-  build essential
+  build-essential
 
 echo "zainstalowano zaleznosci"
