@@ -4,9 +4,8 @@
 set -euo pipefail
 
 REPO_NAME="px4-ros2-gazebo-ubuntu2004"
-REPO_OWNER="jakub-arkadiusz-putowski"
 REPO_BRANCH="main"
-REPO_URL="https://github.com/${REPO_OWNER}/${REPO_NAME}.git"
+REPO_URL="https://github.com/jakub-arkadiusz-putowski/${REPO_NAME}.git"
 INSTALL_DIR="${HOME}/${REPO_NAME}"
 
 PX4_DIR="${INSTALL_DIR}/PX4-Autopilot"
