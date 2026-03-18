@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-PX4_DIR="$HOME/px4-ros2-gazebo-ub2004/PX4-Autopilot"
+PX4_DIR="$HOME/px4-ros2-gazebo-ubuntu2004/PX4-Autopilot"
 
 if [ ! -d "$PX4_DIR" ]; then
   echo "klonuje px4"
