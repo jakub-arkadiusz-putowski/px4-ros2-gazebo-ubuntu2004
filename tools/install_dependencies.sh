@@ -2,7 +2,7 @@
 set -euo pipefail
 
 source /etc/os-release
-if [[ "$VERSION_ID" != "20.04" ]];then
+if [[ "$VERSION_ID" != "20.04" ]]; then
   echo "wymaga ub20.04"
   exit 1
 fi
