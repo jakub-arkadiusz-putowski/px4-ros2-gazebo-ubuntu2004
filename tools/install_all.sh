@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+#jak sie cos zesra to sie zatrzyma
 set -euo pipefail
 
 REPO_NAME="px4-ros2-gazebo-ubuntu2004"
@@ -12,7 +14,7 @@ PX4_REPO="https://github.com/PX4/PX4-Autopilot.git"
 
 ROS_DISTRO="foxy"
 
-
+#katalog do instalacji
 if [ ! -d "$INSTALL_DIR" ]; then
   echo "klonowanie do $INSTALL_DIR"
   git clone "$REPO_URL" "$INSTALL_DIR"
