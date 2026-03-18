@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P19web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        h1 + h4 {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .category {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(100% - 20px);
+            max-width: 300px;
+        }
+
+        .category.psk {
+            flex: 1 1 100%;
+            max-width: 600px;
+        }
+
+        .category h2 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+        }
+
+        .category-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .category-column {
+            flex: 1 1 calc(50% - 10px);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .table-style table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+
+        .table-style th, .table-style td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table-style th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            font-size: 0.9em;
+        }
+
+        /* Responsywne style */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h1 + h4 {
+                font-size: 1em;
+            }
+
+            .categories {
+                gap: 10px;
+            }
+
+            .category {
+                flex: 1 1 calc(100% - 10px);
+            }
+
+            .category.psk {
+                flex: 1 1 100%;
+            }
+
+            .category-column {
+                flex: 1 1 100%;
+            }
+
+            .table-style table {
+                font-size: 0.8em;
+            }
+
+            .table-style th, .table-style td {
+                padding: 6px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h1 + h4 {
+                font-size: 0.9em;
+            }
+
+            .category {
+                padding: 10px;
+            }
+
+            .table-style table {
+                font-size: 0.75em;
+            }
+
+            .table-style th, .table-style td {
+                padding: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Piotrkowska19web</h1>
+    <h4>subtext2-todo</h4>
+
+    <div class="categories">
+        <div class="category psk">
+            <h2>PSK</h2>
+            <div class="category-content">
+                <div class="category-column">
+                    <h3>semestry</h3>
+                    <ul>
+                        <li><a href="PSK/ss1/list.html">semestr-1</a></li>
+                        <li><a href="PSK/ss2/list.html">semestr-2</a></li>
+                        <li><a href="PSK/ss3/list.html">semestr-3</a></li>
+                        <li><a href="PSK/ss4/list.html">semestr-4</a></li>
+                        <li><a href="PSK/ss5/list.html">semestr-5</a></li>
+                        <li><a href="https://www.protectedtext.com/jap-psk-ss6">semestr-6</a></li>
+                    </ul>
+                </div>
+                <div class="category-column">
+                    <h3>prace</h3>
+                    <ul>
+                        <li><a href="password.html">praca-inżynierska</a></li>
+                        <li><a href="password.html">do-Zawarczyńskiego</a></li>
+                        <li><a href="password.html">High Altitude Lift Accelerator</a></li>
+                        <li>....</li>
+                        <li><a href="password.html">LIGO-interferometr</a></li>
+                        <li><a href="password.html">siatka-dyfrakcyjna</a></li>
+                    </ul>
+                </div>
+                <div class="category-column">
+                    <h3>FUPLA</h3>
+                    <ul>
+                        <li><a href="password.html">ROS2</a></li>
+                        <li><a href="password.html">Gazebo</a></li>
+                        <li><a href="password.html">webots</a></li>
+                        <li><a href="password.html">uklad-LED</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>korepetycje</h2>
+            <ul>
+                <li><a href="password.html">do-Fizyki-jakies</a></li>
+                <li><a href="password.html">Matematyka</a></li>
+                <p>....</p>
+                <li><a href="triangle.html">triangle-gen</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>educayshun</h2>
+            <ul>
+                <li><a href="password.html">Fizyka</a></li>
+                <li><a href="password.html">Matematyka</a></li>
+                <li><a href="password.html">komputerowa-symulacja-ukladow-dynamicznych</a></li>
+                <li><a href="password.html">programowanie-komputerow2</a></li>
+                <li><a href="password.html">rownania-rozniczkowe</a></li>
+                <li><a href="password.html">jakas-kryptografia</a></li>
+                <li><a href="password.html">Fourier-Nyquista-regulatorPID</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>syncthing</h2>
+            <ul>
+                <li><a href="password.html">syncthing-p19host</a></li>
+                <li><a href="password.html">syncthing-p19hp</a></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>Halu playlist</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/playlist?list=PLYLH9qjIwloI82FCYSYrlKATiY7QKUwMT" target="_blank">cool maps</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLYLH9qjIwloIEYToNLg-XiVSRn4GQZ8w7" target="_blank">cool tunes</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLYLH9qjIwloJ_a_kw1RCGAT6kkuP1TRA3" target="_blank">cool oldies</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLYLH9qjIwloLNcRu9f1X9po6jyXcLH3Pb" target="_blank">hype up!</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLYLH9qjIwloJj__AaM2WvyIDxsbCYQFUj" target="_blank">depresso</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLYLH9qjIwloIAyVlXYPqVwN2EiIBBPtxR" target="_blank">inspirations</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLYLH9qjIwloLMNN1qvPd2f9Ru_zpAdToh" target="_blank">want to animate</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="notes-section table-style">
+        <h2>Wydarzenia</h2>
+        <table>
+            <tr>
+                <th>Czas:</th>
+                <th>Nazwa:</th>
+                <th>Opis:</th>
+            </tr>
+            <tr>
+                <td>empty-time</td>
+                <td>empty-name</td>
+                <td>empty-desc</td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <p>subtext1</p>
+        <p>subtext1</p>
+    </footer>
+
+</body>
+</html>
