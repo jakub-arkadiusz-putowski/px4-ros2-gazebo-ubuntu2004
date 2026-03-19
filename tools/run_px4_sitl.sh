@@ -36,7 +36,7 @@ check_ubuntu_version() {
 }
 
 check_px4_directory() {
-  # PX4 should already be cloned and prepared during installation.
+  # PX4 should already be cloned during installation.
   if [[ ! -d "${PX4_DIR}" ]]; then
     error "PX4 directory was not found: ${PX4_DIR}"
   fi
@@ -49,12 +49,14 @@ check_px4_directory() {
 }
 
 source_ros_environment() {
-  # ROS 2 is not always required just to run PX4 SITL,
-  # but loading it here makes the environment more complete and future-proof.
+  # ROS 2 setup scripts are not always friendly with `set -u`,
+  # so we temporarily disable nounset before sourcing them.
   if [[ -f "${ROS_SETUP_FILE}" ]]; then
     log "Sourcing ROS 2 ${ROS_DISTRO} environment."
+    set +u
     # shellcheck disable=SC1090
     source "${ROS_SETUP_FILE}"
+    set -u
   else
     log "ROS 2 setup file was not found at ${ROS_SETUP_FILE}. Continuing without sourcing ROS 2."
   fi
