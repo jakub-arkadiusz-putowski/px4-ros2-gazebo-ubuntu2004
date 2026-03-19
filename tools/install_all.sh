@@ -30,4 +30,5 @@ chmod +x tools/*.sh
 echo "instalacja zaleznosci"
 ./tools/install_dependencies.sh
 ./tools/install_ros2.sh
+./tools/install_gazebo.sh
 ./tools/download_px4.sh
